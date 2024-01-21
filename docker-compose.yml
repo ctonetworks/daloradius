@@ -11,8 +11,8 @@ services:
       - MYSQL_USER=radius
       - MYSQL_PASSWORD=radiusdbpw
       - MYSQL_ROOT_PASSWORD=radiusrootdbpw
-    volumes:
-      - "./data/mysql:/var/lib/mysql"
+    #volumes:
+      #- "./data/mysql:/var/lib/mysql"
 
   radius:
     container_name: radius
