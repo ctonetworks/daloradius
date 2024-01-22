@@ -1,5 +1,3 @@
-version: "3"
-
 services:
 
   radius-mysql:
@@ -33,8 +31,8 @@ services:
       - MYSQL_PASSWORD=radiusdbpw
       # Optional settings
       - DEFAULT_CLIENT_SECRET=testing123
-    volumes:
-      - ./data/freeradius:/data
+    #volumes:
+    #  - ./data/freeradius:/data
     # If you want to disable debug output, remove the command parameter
     command: -X
 
@@ -62,5 +60,5 @@ services:
       - MAIL_FROM=root@daloradius.xdsl.by
       - MAIL_AUTH=
 
-    volumes:
-      - ./data/daloradius:/data
+    #volumes:
+    #  - ./data/daloradius:/data
